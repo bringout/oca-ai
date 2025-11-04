@@ -26,24 +26,33 @@ msgid ""
 "          No notification will be sent when it is finished.\n"
 "        "
 msgstr ""
+"\n"
+"        Definiše kako se rezultat AI sistema obrađuje.\n"
+"        - 'Neposredno': Rezultat se obrađuje odmah nakon što AI sistem odgovori.\n"
+"        - 'Asinkrono': Rezultat se obrađuje u pozadini.\n"
+"          Omogućava duže operacije.\n"
+"          Odoo će pružiti URL AI sistemu gdje će odgovor biti poslan.\n"
+"          Korisnici će primiti obavještenje kada operacija počne.\n"
+"          Neće biti poslano obavještenje kada se završi.\n"
+"        "
 
 #. module: ai_oca_bridge
 #. odoo-python
-#: code:addons/ai_oca_bridge/models/ai_bridge.py:0
+#: code:addons/ai_oca_bridge/models/ai_bridge.py
 #, python-format
 msgid "%s executed successfully."
 msgstr "%s uspešno izvršeno."
 
 #. module: ai_oca_bridge
 #. odoo-python
-#: code:addons/ai_oca_bridge/models/ai_bridge.py:0
+#: code:addons/ai_oca_bridge/models/ai_bridge.py
 #, python-format
 msgid "%s failed."
 msgstr "%s neuspešno."
 
 #. module: ai_oca_bridge
 #. odoo-python
-#: code:addons/ai_oca_bridge/models/ai_bridge.py:0
+#: code:addons/ai_oca_bridge/models/ai_bridge.py
 #, python-format
 msgid "%s is not active."
 msgstr "%s nije aktivno."
@@ -55,14 +64,12 @@ msgstr "AI"
 
 #. module: ai_oca_bridge
 #: model:ir.actions.act_window,name:ai_oca_bridge.ai_bridge_act_window
-#: model:ir.ui.menu,name:ai_oca_bridge.ai_bridge_menu
-#: model:ir.ui.menu,name:ai_oca_bridge.ai_bridge_root_menu
 msgid "AI Bridge"
 msgstr "AI most"
 
 #. module: ai_oca_bridge
 #. odoo-python
-#: code:addons/ai_oca_bridge/models/ai_bridge.py:0
+#: code:addons/ai_oca_bridge/models/ai_bridge.py
 #, python-format
 msgid "AI Bridge Executed"
 msgstr "AI most izvršen"
@@ -74,14 +81,14 @@ msgstr "AI most izvršavanje"
 
 #. module: ai_oca_bridge
 #. odoo-python
-#: code:addons/ai_oca_bridge/models/ai_bridge.py:0
+#: code:addons/ai_oca_bridge/models/ai_bridge.py
 #, python-format
 msgid "AI Bridge Failed"
 msgstr "AI most neuspešan"
 
 #. module: ai_oca_bridge
 #. odoo-python
-#: code:addons/ai_oca_bridge/models/ai_bridge.py:0
+#: code:addons/ai_oca_bridge/models/ai_bridge.py
 #, python-format
 msgid "AI Bridge Inactive"
 msgstr "AI most neaktivan"
@@ -123,7 +130,6 @@ msgstr "Potrebna akcija"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge__active
-#: model_terms:ir.ui.view,arch_db:ai_oca_bridge.ai_bridge_search_view
 msgid "Active"
 msgstr "Aktivan"
 
@@ -159,18 +165,6 @@ msgstr "Konfiguracija AI mosta"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge__ai_bridge_info
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_document_page__ai_bridge_info
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_helpdesk_ticket__ai_bridge_info
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_helpdesk_ticket_team__ai_bridge_info
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_mail_blacklist__ai_bridge_info
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_mail_channel__ai_bridge_info
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_mail_thread__ai_bridge_info
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_mail_thread_blacklist__ai_bridge_info
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_mail_thread_cc__ai_bridge_info
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_mail_thread_phone__ai_bridge_info
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_phone_blacklist__ai_bridge_info
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_res_partner__ai_bridge_info
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_res_users__ai_bridge_info
 msgid "Ai Bridge Info"
 msgstr "Ai most informacije"
 
@@ -186,7 +180,6 @@ msgstr "Ai upotreba"
 
 #. module: ai_oca_bridge
 #: model_terms:ir.ui.view,arch_db:ai_oca_bridge.ai_bridge_form_view
-#: model_terms:ir.ui.view,arch_db:ai_oca_bridge.ai_bridge_search_view
 msgid "Archived"
 msgstr "Arhivirano"
 
@@ -232,19 +225,16 @@ msgstr "Osnovna autentifikacija"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge__company_id
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge_execution__company_id
 msgid "Company"
 msgstr "Preduzeće"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge__create_uid
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge_execution__create_uid
 msgid "Created by"
 msgstr "Kreirao"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge__create_date
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge_execution__create_date
 msgid "Created on"
 msgstr "Kreirano"
 
@@ -254,6 +244,8 @@ msgid ""
 "Defines how this bridge is used. If 'Thread', it will be used in the mail "
 "thread context."
 msgstr ""
+"Definiše kako se ovaj most koristi. Ako je 'Thread', koristiće se u "
+"kontekstu email niti."
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,help:ai_oca_bridge.field_ai_bridge__result_type
@@ -267,7 +259,6 @@ msgstr "Opis"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge__display_name
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge_execution__display_name
 msgid "Display Name"
 msgstr "Prikazani naziv"
 
@@ -288,8 +279,6 @@ msgstr "Nit e-pošte"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge_execution__error
-#: model:ir.model.fields.selection,name:ai_oca_bridge.selection__ai_bridge_execution__state__error
-#: model_terms:ir.ui.view,arch_db:ai_oca_bridge.ai_bridge_execution_form_view
 msgid "Error"
 msgstr "Greška"
 
@@ -310,14 +299,14 @@ msgstr "Detalji izvršavanja"
 
 #. module: ai_oca_bridge
 #. odoo-python
-#: code:addons/ai_oca_bridge/controllers/ai.py:0
+#: code:addons/ai_oca_bridge/controllers/ai.py
 #, python-format
 msgid "Execution is expired."
 msgstr "Izvršavanje je isteklo."
 
 #. module: ai_oca_bridge
 #. odoo-python
-#: code:addons/ai_oca_bridge/controllers/ai.py:0
+#: code:addons/ai_oca_bridge/controllers/ai.py
 #, python-format
 msgid "Execution not found."
 msgstr "Izvršavanje nije pronađeno."
@@ -374,7 +363,6 @@ msgstr "Ima poruku"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge__id
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge_execution__id
 msgid "ID"
 msgstr "ID"
 
@@ -415,19 +403,16 @@ msgstr "Pratilac"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge____last_update
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge_execution____last_update
 msgid "Last Modified on"
 msgstr "Zadnje mijenjano"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge__write_uid
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge_execution__write_uid
 msgid "Last Updated by"
 msgstr "Zadnji ažurirao"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge__write_date
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge_execution__write_date
 msgid "Last Updated on"
 msgstr "Zadnje ažurirano"
 
@@ -448,7 +433,6 @@ msgstr "Poruke"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge__model_id
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge_execution__model_id
 msgid "Model"
 msgstr "Model"
 
@@ -474,7 +458,6 @@ msgstr "Rok za moju aktivnost"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge__name
-#: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge_execution__name
 msgid "Name"
 msgstr "Naziv:"
 
@@ -505,9 +488,8 @@ msgstr "Nema obrade"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields.selection,name:ai_oca_bridge.selection__ai_bridge__auth_type__none
-#: model:ir.model.fields.selection,name:ai_oca_bridge.selection__ai_bridge__usage__none
 msgid "None"
-msgstr ""
+msgstr "Ništa"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge__message_needaction_counter
@@ -531,7 +513,6 @@ msgstr "Broj poruka sa greškama pri isporuci"
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge_execution__payload
-#: model_terms:ir.ui.view,arch_db:ai_oca_bridge.ai_bridge_execution_form_view
 msgid "Payload"
 msgstr "Korisni teret"
 
@@ -611,6 +592,8 @@ msgid ""
 "Sample payload to be sent to the AI system. This is used for testing and "
 "debugging purposes."
 msgstr ""
+"Primjer payload-a koji se šalje AI sistemu. Koristi se za testiranje i svrhe"
+" otklanjanja grešaka."
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,field_description:ai_oca_bridge.field_ai_bridge__sequence
@@ -630,6 +613,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+"Status baziran na aktivnostima\n"
+"Zakašnjelo: Rok je već prošao\n"
+"Danas: Datum aktivnosti je danas\n"
+"Planirano: Buduće aktivnosti."
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,help:ai_oca_bridge.field_ai_bridge__url
@@ -644,7 +631,9 @@ msgstr "Model sa kojim je ovaj most povezan."
 #. module: ai_oca_bridge
 #: model:ir.model.fields,help:ai_oca_bridge.field_ai_bridge__auth_type
 msgid "The type of authentication used to connect to the external AI system."
-msgstr "Tip autentifikacije koji se koristi za povezivanje sa spoljašnjim AI sistemom."
+msgstr ""
+"Tip autentifikacije koji se koristi za povezivanje sa spoljašnjim AI "
+"sistemom."
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields,help:ai_oca_bridge.field_ai_bridge__user_id
@@ -662,6 +651,8 @@ msgid ""
 "Timeout in seconds for asynchronous operations. If the operation does not "
 "complete within this time, it will be considered failed."
 msgstr ""
+"Vremensko ograničenje u sekundama za asinkrone operacije. Ako se operacija "
+"ne završi u ovom vremenu, smatraće se neuspješnom."
 
 #. module: ai_oca_bridge
 #: model:ir.model.fields.selection,name:ai_oca_bridge.selection__ai_bridge__auth_type__token
@@ -670,7 +661,7 @@ msgstr "Token autentifikacija"
 
 #. module: ai_oca_bridge
 #. odoo-python
-#: code:addons/ai_oca_bridge/controllers/ai.py:0
+#: code:addons/ai_oca_bridge/controllers/ai.py
 #, python-format
 msgid "Token is not allowed for this execution."
 msgstr "Token nije dozvoljen za ovo izvršavanje."
@@ -687,7 +678,7 @@ msgstr "URL"
 
 #. module: ai_oca_bridge
 #. odoo-python
-#: code:addons/ai_oca_bridge/models/ai_bridge_execution.py:0
+#: code:addons/ai_oca_bridge/models/ai_bridge_execution.py
 #, python-format
 msgid "Unsupported authentication type."
 msgstr "Nepodržan tip autentifikacije."
@@ -719,8 +710,10 @@ msgstr "Povijest komunikacije Web stranice"
 
 #. module: ai_oca_bridge
 #. odoo-python
-#: code:addons/ai_oca_bridge/models/ai_bridge.py:0
+#: code:addons/ai_oca_bridge/models/ai_bridge.py
 #, python-format
 msgid ""
 "When usage is 'AI Thread Unlink', the Payload Type must be 'No payload'."
 msgstr ""
+"Kada je upotreba 'AI Thread Unlink', Tip payload-a mora biti 'Bez "
+"payload-a'."

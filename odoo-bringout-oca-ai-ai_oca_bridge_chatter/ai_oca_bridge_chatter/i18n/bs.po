@@ -30,7 +30,6 @@ msgstr "Ai izvršavanje"
 
 #. module: ai_oca_bridge_chatter
 #: model:ir.model.fields.selection,name:ai_oca_bridge_chatter.selection__ai_bridge__payload_type__chatter
-#: model:ir.model.fields.selection,name:ai_oca_bridge_chatter.selection__ai_bridge__usage__chatter
 msgid "Chatter"
 msgstr "Razgovor"
 
@@ -50,6 +49,8 @@ msgid ""
 "Defines how this bridge is used. If 'Thread', it will be used in the mail "
 "thread context."
 msgstr ""
+"Definiše kako se ovaj most koristi. Ako je 'Thread', koristiće se u "
+"kontekstu email niti."
 
 #. module: ai_oca_bridge_chatter
 #: model:ir.model,name:ai_oca_bridge_chatter.model_mail_channel
@@ -63,14 +64,14 @@ msgstr "Tip korisnog tereta"
 
 #. module: ai_oca_bridge_chatter
 #. odoo-python
-#: code:addons/ai_oca_bridge_chatter/models/ai_bridge_execution.py:0
+#: code:addons/ai_oca_bridge_chatter/models/ai_bridge_execution.py
 #, python-format
 msgid "The message does not belong to any channel."
 msgstr "Poruka ne pripada nijednom kanalu."
 
 #. module: ai_oca_bridge_chatter
 #. odoo-python
-#: code:addons/ai_oca_bridge_chatter/models/ai_bridge.py:0
+#: code:addons/ai_oca_bridge_chatter/models/ai_bridge.py
 #, python-format
 msgid "The record must be a mail.message instance."
 msgstr "Zapis mora biti instanca mail.message."
