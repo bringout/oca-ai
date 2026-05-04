@@ -64,14 +64,14 @@ msgstr "Tip korisnog tereta"
 
 #. module: ai_oca_bridge_chatter
 #. odoo-python
-#: code:addons/ai_oca_bridge_chatter/models/ai_bridge_execution.py
+#: code:addons/ai_oca_bridge_chatter/models/ai_bridge_execution.py:0
 #, python-format
 msgid "The message does not belong to any channel."
 msgstr "Poruka ne pripada nijednom kanalu."
 
 #. module: ai_oca_bridge_chatter
 #. odoo-python
-#: code:addons/ai_oca_bridge_chatter/models/ai_bridge.py
+#: code:addons/ai_oca_bridge_chatter/models/ai_bridge.py:0
 #, python-format
 msgid "The record must be a mail.message instance."
 msgstr "Zapis mora biti instanca mail.message."
